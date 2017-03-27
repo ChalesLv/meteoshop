@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/meteoshop"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<levels>
+		<level name="Spring-4.3.7.RELEASE" value="project"/>
+		<level name="Hibernate 5.2.9-5.2.9" value="project"/>
+	</levels>
+</component>

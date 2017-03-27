@@ -1,0 +1,22 @@
+本项目结构分为：
+action、service、dao、model四层
+
+1.action
+职责：控制窗体
+可调用：service、model
+应用框架：swing、awt
+PS: 以Action 为结尾
+
+2.service
+职责：处理业务逻辑
+可调用：dao、model
+应用框架：spring
+PS:话类以Manage结尾，实现类以ImpliService结尾，结尾其他均以Service结尾，抽象类以Abstract开头，
+
+3.dao
+职责：处理数据读写
+可调用：model
+应用框架：spring(可选)，hibernate
+
+4.model
+职责：创建领域模型
