@@ -2,11 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="cn.gov.cma.meteoshop.service.user.AdminImpliService" id="admin" ></bean>
-    <bean class="cn.gov.cma.meteoshop.service.user.GuestImpliservice" id="guest"></bean>
+    <bean class="cn.gov.cma.meteoshop.service.user.AdminImplService" id="adminImplService" name="adminImplService"></bean>
+    <bean class="cn.gov.cma.meteoshop.service.user.GuestImplservice" id="guestImplService" name="guestImplService"></bean>
 
     <bean class="cn.gov.cma.meteoshop.service.user.AbstractUserService" id="user" abstract="true">
-        <property ref="admin" name="admin"></property>
-        <property ref="guest" name="guest"></property>
+        <property ref="adminImplService" name="adminImplService"></property>
+        <property ref="guestImplService" name="guestImplService"></property>
     </bean>
 </beans>

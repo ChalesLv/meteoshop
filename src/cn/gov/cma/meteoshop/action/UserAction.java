@@ -10,7 +10,7 @@ import javax.swing.*;
  */
 public class UserAction {
     public UserAction(){
-        UserInfo userInfo = UserContractManage.getUserInfo("admin","guest");
-        JOptionPane.showConfirmDialog(null,userInfo.getUsername());
+        UserInfo userInfo = UserContractManage.getUserInfo("guestImplService","guest");
+        JOptionPane.showConfirmDialog(null,userInfo.getUsername()+"\t"+userInfo.getPassword());
     }
 }
