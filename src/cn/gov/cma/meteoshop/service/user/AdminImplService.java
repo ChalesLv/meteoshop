@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
 public class AdminImplService extends AbstractUserService {
     @Override
     public UserInfo getUserInfo(String id) {
-        return new UserInfo(id,"adminUsername","adminPassworddd");
+        return new UserInfo(id,"adminUsername","adminPassworddddd");
     }
 }
